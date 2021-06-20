@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+
+  box-sizing: border-box;
+}
+
+body {
+  background-color: darkgray;
+  color: aliceblue;
+}
+
+header {
+  text-align: center;
+  font-size: 30px;
+  height: 200px;
+  background-color: darkslategray;
+}
+
+main {
+  margin: auto;
+  width: 800px;
+}
+
+.todo {
+  padding: 20px;
+  background-color: aliceblue;
+  display: flex;
+}
+
+.name {
+  border: 2px solid cadetblue;
+  width: 70%;
+  padding: 20px;
+  background-color: aliceblue;
+  color: cadetblue;
+  height: 70px;
+}
+
+.add {
+  border: none;
+  background-color: cadetblue;
+  color: aliceblue;
+  padding: 20px;
+  width: 30%;
+}
+
+.list {
+  background-color: aliceblue;
+  padding: 20px;
+}
+
+.item {
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.list p {
+  width: 70%;
+  background-color: cadetblue;
+  color: aliceblue;
+  padding: 20px;
+}
+
+.delete {
+  width: 30%;
+  color: aliceblue;
+  background-color: brown;
+  border: none;
+}
+
+.check {
+  background-color: darkslategray;
+}
