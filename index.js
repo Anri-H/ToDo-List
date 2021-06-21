@@ -1,5 +1,6 @@
 const list = document.querySelector(".list");
 const add = document.querySelector(".add");
+let items = document.querySelectorAll(".item");
 
 function addName() {
   let input = document.querySelector(".name").value;
@@ -25,10 +26,10 @@ function addName() {
 
 add.addEventListener("click", addName);
 
-// let items = document.querySelectorAll(".item");
-//   items.forEach((el, i) => {
-//     const del = document.querySelector(".delete");
-//     del.addEventListener("click", () => {
-//       items.splice(i, 1);
-//     });
-//   });
+console.log(items);
+items.forEach((el, i) => {
+  const del = document.querySelector(".delete");
+  del.addEventListener("click", () => {
+    items.splice(i, 1);
+  });
+});
