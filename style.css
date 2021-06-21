@@ -23,12 +23,12 @@ main {
 
 .todo {
   padding: 20px;
-  background-color: aliceblue;
+  background-color: cadetblue;
   display: flex;
 }
 
 .name {
-  border: 2px solid cadetblue;
+  border: 2px solid darkslategray;
   width: 70%;
   padding: 20px;
   background-color: aliceblue;
@@ -36,17 +36,25 @@ main {
   height: 70px;
 }
 
-.add {
-  border: none;
+.add,
+.select-all {
+  border: 2px solid darkslategray;
   background-color: cadetblue;
   color: aliceblue;
   padding: 20px;
   width: 30%;
+  cursor: pointer;
+}
+
+.add:hover,
+.select-all:hover {
+  background-color: darkslategray;
 }
 
 .list {
-  background-color: aliceblue;
+  background-color: cadetblue;
   padding: 20px;
+  cursor: pointer;
 }
 
 .item {
@@ -56,9 +64,13 @@ main {
 
 .list p {
   width: 70%;
-  background-color: cadetblue;
+  border: 2px solid darkslategray;
   color: aliceblue;
   padding: 20px;
+}
+
+.list p:hover {
+  background-color: darkslategray;
 }
 
 .delete {
@@ -66,8 +78,13 @@ main {
   color: aliceblue;
   background-color: brown;
   border: none;
+  cursor: pointer;
 }
 
-.check {
+.delete:hover {
+  background-color: crimson;
+}
+
+.select {
   background-color: darkslategray;
 }

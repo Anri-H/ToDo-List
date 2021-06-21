@@ -22,14 +22,21 @@ function addName() {
   const del = document.createTextNode("Delete");
   button.appendChild(del);
   div.appendChild(button);
+
+  button.addEventListener("click", () => {
+    div.remove();
+  });
+
+  p.addEventListener("click", () => {
+    p.classList.toggle("select");
+  });
+
+  const all = document.querySelector(".select-all");
+  all.addEventListener("click", () => {
+    p.classList.toggle("select");
+  });
 }
 
 add.addEventListener("click", addName);
 
-console.log(items);
-items.forEach((el, i) => {
-  const del = document.querySelector(".delete");
-  del.addEventListener("click", () => {
-    items.splice(i, 1);
-  });
-});
+// console.log(items);
