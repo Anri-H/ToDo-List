@@ -36,8 +36,7 @@ main {
   height: 70px;
 }
 
-.add,
-.select-all {
+.add {
   border: 2px solid darkslategray;
   background-color: cadetblue;
   color: aliceblue;
@@ -46,8 +45,7 @@ main {
   cursor: pointer;
 }
 
-.add:hover,
-.select-all:hover {
+.add:hover {
   background-color: darkslategray;
 }
 
@@ -64,6 +62,7 @@ main {
 
 .list p {
   width: 70%;
+  height: 60px;
   border: 2px solid darkslategray;
   color: aliceblue;
   padding: 20px;
@@ -73,15 +72,18 @@ main {
   background-color: darkslategray;
 }
 
-.delete {
+.delete,
+.delete-all {
   width: 30%;
+  height: 60px;
   color: aliceblue;
   background-color: brown;
   border: none;
   cursor: pointer;
 }
 
-.delete:hover {
+.delete:hover,
+.delete-all:hover {
   background-color: crimson;
 }
 

@@ -31,12 +31,12 @@ function addName() {
     p.classList.toggle("select");
   });
 
-  const all = document.querySelector(".select-all");
+  const all = document.querySelector(".delete-all");
   all.addEventListener("click", () => {
-    p.classList.toggle("select");
+    const items = document.querySelectorAll(".item");
+    items.forEach((el) => el.remove());
   });
 }
 
 add.addEventListener("click", addName);
 
-// console.log(items);
